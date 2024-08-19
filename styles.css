@@ -19,9 +19,13 @@ ul{
 li{
     color: grey;
     cursor: pointer;
-    word-spacing: 5px;
-    
+    padding: 20px;
 }
 li:hover{
     color: white;
+}
+h1:hover{
+     color: rgb(31, 206, 98);
+     cursor: default;
+
 }
