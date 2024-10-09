@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    position: relative;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.nav-links a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: #575757;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease;
+    z-index: 0;
+}
+
+.nav-links a:hover::before {
+    width: 300%;
+    height: 300%;
+}
+
+.nav-links a:hover {
+    color: white; /* Optionally change this to another color if you want the text color to change on hover */
+}
